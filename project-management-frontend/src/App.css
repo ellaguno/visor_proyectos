@@ -1,0 +1,30 @@
+/* Estilos base de App.css eliminados para usar solo MUI */
+/* Puedes añadir estilos globales personalizados aquí si es necesario */
+
+/* Estilos específicos para frappe-gantt si se necesitan ajustes */
+.gantt .bar-label {
+  font-size: 0.8rem; /* Ejemplo: ajustar tamaño de fuente en barras */
+}
+
+/* Asegurar que el contenedor del Gantt ocupe el espacio */
+/* El div contenedor ya tiene overflow: auto en el componente */
+
+/* Colores para estados de tareas en Gantt */
+.gantt .bar-completed .bar {
+  fill: #86d486 !important; /* Verde */
+}
+.gantt .bar-overdue .bar {
+  fill: #d48686 !important; /* Rojo */
+}
+.gantt .bar-in-progress .bar {
+  fill: #86a5d4 !important; /* Azul */
+}
+.gantt .bar-not-started .bar {
+   fill: #d3d3d3 !important; /* Gris claro */
+}
+
+/* Estilo para resaltar barra en Gantt (sin transición) */
+.gantt .bar-wrapper .bar.bar-hovered {
+  fill: orange !important; /* Cambiar color al hacer hover */
+  transition: none !important; /* Eliminar cualquier transición */
+}
